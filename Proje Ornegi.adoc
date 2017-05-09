@@ -8,7 +8,7 @@ gmapping Kurulum::
 
 Indir = https://github.com/ros-perception/slam_gmapping
 
-image::https://github.com/mayuce/pathPlanning/blob/master/Images-for-ReadMe/gmapping/10.png?raw=true[]
+image::https://github.com/mayuce/Robotik-Sistemlere-Giris-Proje/blob/master/Images-for-ReadMe/gmapping/10.png?raw=true[]
 
 Adresinden indirdigimiz arsivdeki dosyalari masaustune cikartin.
 
@@ -16,7 +16,7 @@ Adresinden indirdigimiz arsivdeki dosyalari masaustune cikartin.
 rosws init <cikarttiginiz arsivin adresi> </opt/ros/indigo/share == yani $ROS_PACKAGE_PATH ' iniz. Turtlebot imaji icin esitligin solundaki>
 ```
 
-image::https://github.com/mayuce/pathPlanning/blob/master/Images-for-ReadMe/gmapping/11.png?raw=true[]
+image::https://github.com/mayuce/Robotik-Sistemlere-Giris-Proje/blob/master/Images-for-ReadMe/gmapping/11.png?raw=true[]
 
 artik gmapping kodunuz kullanima hazir. Not: Bende onceden yukledigim icin " Error " uyarisinin aldim.
 
@@ -29,14 +29,14 @@ Indir = http://wiki.ros.org/slam_gmapping/Tutorials/MappingFromLoggedData#downlo
 
 * roscore'i calistirin
 
-image::https://github.com/mayuce/pathPlanning/blob/master/Images-for-ReadMe/gmapping/1.png?raw=true[]
+image::https://github.com/mayuce/Robotik-Sistemlere-Giris-Proje/blob/master/Images-for-ReadMe/gmapping/1.png?raw=true[]
 
 ```bourne
  rosparam set use_sim_time true
 ```
  komutunu calistirin
 
-image::https://github.com/mayuce/pathPlanning/blob/master/Images-for-ReadMe/gmapping/2.png?raw=true[]
+image::https://github.com/mayuce/Robotik-Sistemlere-Giris-Proje/blob/master/Images-for-ReadMe/gmapping/2.png?raw=true[]
 
 ```bourne
 rosrun gmapping slam_gmapping scan:=base_scan
@@ -51,7 +51,7 @@ rosrun gmapping slam_gmapping scan:=base_scan _odom_frame:=odom_combined
 
 bu komut ile odometri verisi de izlenecek. Indirdiginiz dosya icin sadece base_scan olanini calistirmaniz yeterli olacaktir.
 
-image::https://github.com/mayuce/pathPlanning/blob/master/Images-for-ReadMe/gmapping/3.png?raw=true[]
+image::https://github.com/mayuce/Robotik-Sistemlere-Giris-Proje/blob/master/Images-for-ReadMe/gmapping/3.png?raw=true[]
 
 ```bourne
 rosbag play --clock <indirdiginiz dosyanin yeri veya olusturdugunuz rosbag'in yeri>
@@ -59,11 +59,11 @@ rosbag play --clock <indirdiginiz dosyanin yeri veya olusturdugunuz rosbag'in ye
 
 bu komut ile bag'daki veriler sanki su an robot uzerinden aliniyormus gibi topiclere iletilecektir.
 
-image::https://github.com/mayuce/pathPlanning/blob/master/Images-for-ReadMe/gmapping/5.png?raw=true[]
+image::https://github.com/mayuce/Robotik-Sistemlere-Giris-Proje/blob/master/Images-for-ReadMe/gmapping/5.png?raw=true[]
 
 kodu bitince asagidaki gibi bir ekran karsilayacak sizi. 
 
-image::https://github.com/mayuce/pathPlanning/blob/master/Images-for-ReadMe/gmapping/6.png?raw=true[]
+image::https://github.com/mayuce/Robotik-Sistemlere-Giris-Proje/blob/master/Images-for-ReadMe/gmapping/6.png?raw=true[]
 
 ```bourne
 rosrun map_server map_saver -f <kaydetmek istediginiz yer>
@@ -71,11 +71,11 @@ rosrun map_server map_saver -f <kaydetmek istediginiz yer>
 
 son olarak bu komut ile dosyamizi kaydediyoruz ve haritamiz olusuyor.
 
-image::https://github.com/mayuce/pathPlanning/blob/master/Images-for-ReadMe/gmapping/8.png?raw=true[]
+image::https://github.com/mayuce/Robotik-Sistemlere-Giris-Proje/blob/master/Images-for-ReadMe/gmapping/8.png?raw=true[]
 
 olusan harita:
 
-image::https://github.com/mayuce/pathPlanning/blob/master/Images-for-ReadMe/gmapping/9.png?raw=true[]
+image::https://github.com/mayuce/Robotik-Sistemlere-Giris-Proje/blob/master/Images-for-ReadMe/gmapping/9.png?raw=true[]
 
 ## PDF Aciklamasi
 
